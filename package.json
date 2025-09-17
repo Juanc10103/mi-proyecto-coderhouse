@@ -1,0 +1,19 @@
+{
+  "name": "mi-proyecto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juanc10103/mi-proyecto-coderhouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juanc10103/mi-proyecto-coderhouse/issues"
+  },
+  "homepage": "https://github.com/Juanc10103/mi-proyecto-coderhouse#readme",
+  "description": ""
+}

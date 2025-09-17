@@ -1,0 +1,153 @@
+ .estiloMenu {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+
+     p {
+         font-family: "Roboto Condensed", sans-serif;
+         margin-left: 50px;
+     }
+
+     h2 {
+         font-family: "Playwrite PL", cursive;
+     }
+
+     h3 {
+         font-family: "Roboto Condensed", sans-serif;
+         margin-left: 20px;
+         margin-top: 1px;
+         margin-bottom: 5px;
+     }
+
+
+ }
+
+ .menu-empanada {
+     display: flex;
+     gap: 50px;
+
+     .texto-empanada {
+         align-content: center;
+         background-color: map-get($colores, color4);
+         width: 500px;
+         height: 400px;
+         margin: 30px 0px 0px 25%;
+
+         h2 {
+             margin-bottom: 30px;
+             margin-left: 60px;
+         }
+
+         h3 {
+             margin-left: 100px;
+         }
+
+         div {
+             margin-left: 100px;
+         }
+     }
+
+     div {
+         img {
+             height: 300px;
+             width: 300px;
+             margin-top: 100px;
+             border-radius: 70px 70px 0px 0px;
+         }
+     }
+
+ }
+
+ .menu-pasta {
+     display: flex;
+     gap: 50px;
+     margin-left: 25%;
+
+     .texto-pasta {
+         align-content: center;
+         background-color: map-get($colores, color4);
+         width: 500px;
+         height: 500px;
+         margin: 30px 0px 0px 0px;
+
+         h2 {
+             margin-bottom: 30px;
+             margin-left: 60px;
+         }
+
+         h3 {
+             margin-left: 100px;
+         }
+
+         div {
+             margin-left: 100px;
+         }
+     }
+
+     div {
+         img {
+             height: 300px;
+             width: 300px;
+             margin-top: 130px;
+             border-radius: 70px 70px 0px 0px;
+         }
+     }
+ }
+
+ .menu-tarta {
+     display: flex;
+     gap: 50px;
+
+     .texto-tarta {
+         align-content: center;
+         background-color: map-get($colores, color4);
+         width: 500px;
+         height: 400px;
+         margin: 30px 0px 0px 25%;
+
+         h2 {
+             margin-bottom: 30px;
+             margin-left: 60px;
+         }
+
+         h3 {
+             margin-left: 100px;
+         }
+
+         div {
+             margin-left: 100px;
+         }
+     }
+
+     div {
+         img {
+             height: 300px;
+             width: 300px;
+             margin-top: 100px;
+             border-radius: 70px 70px 0px 0px;
+         }
+     }
+ }
+
+
+ .precioBoton {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr;
+     gap: 10px;
+
+     p {
+         grid-column: 1/2;
+         justify-self: center;
+     }
+
+     button {
+         grid-column: 2/3;
+         justify-self: left;
+         border-radius: 5px;
+         height: 35px;
+         width: 70px;
+     }
+
+
+ }

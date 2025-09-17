@@ -1,0 +1,241 @@
+@media(max-width: 23.4375rem) {
+
+    // ----header----
+    header {
+        height: 200px;
+        width: 100%;
+    }
+
+    nav {
+        width: 90%;
+        margin-left: 45px;
+    }
+
+
+
+
+    // -------main-------
+
+    .cartaB {
+        margin-left: 130px;
+    }
+
+    .logo-main {
+        margin: 0px;
+        height: 250px;
+        margin-left: 45px;
+    }
+
+    .caja-vianda {
+        margin-left: 40px;
+        margin-top: 70px;
+        width: 80%;
+    }
+
+    //  ----contacto----
+
+    .contacto-main {
+        margin-top: 0px;
+
+        div {
+            iframe {
+                margin-left: 20px;
+            }
+
+            p {
+                font-size: map-get($tamanios , sm);
+                text-align: center;
+            }
+        }
+
+        div {
+            a {
+                margin-left: 60px;
+            }
+
+            form {
+                margin-left: 40px;
+                width: 65%;
+            }
+        }
+
+        .button-form {
+            margin-left: 65px;
+        }
+
+        // 
+    }
+
+    //  ----sobre mi-----
+    .SM {
+        flex-direction: column;
+
+        .sobreMi {
+            margin: 20px 0px 0px 0px;
+            width: 90%;
+        }
+
+        .decoracionSM {
+
+            img {
+                margin: 0px 0px 0px 75px;
+            }
+
+            .img-uno {
+                height: 230px;
+                width: 230px;
+            }
+
+            .img-dos {
+                height: 230px;
+                width: 230px;
+            }
+
+            .img-tres {
+                height: 230px;
+                width: 230px;
+            }
+        }
+
+
+    }
+
+    //  -----carro-----
+
+    .contenedor-compras {
+        width: 100%;
+        height: 320px;
+        margin-top: 20px;
+
+        .compras {
+            width: 95%;
+            margin: 10px 0px 0px 10px;
+            padding-top: 25px;
+
+            .pedido {
+                img {
+                    height: 110px;
+                    width: 130px;
+                    margin: 10px;
+                }
+
+                div {
+                    h3 {
+                        font-size: map-get($tamanios , sm);
+                    }
+
+                    p {
+                        font-size: map-get($tamanios, sm);
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .carritoTotal {
+        margin-left: 50%;
+        margin-top: 30px;
+    }
+
+
+    //  -----carta-----
+
+    .menu-empanada {
+        flex-direction: column;
+        gap: 0px;
+
+        .texto-empanada {
+            margin-left: 15px;
+            width: 350px;
+            height: 450px;
+
+            h2 {
+                margin-bottom: 30px;
+                margin-left: 30px;
+            }
+
+            h3 {
+                margin-left: 80px;
+            }
+
+            div {
+                margin-left: 80px;
+            }
+        }
+
+        div {
+            img {
+                height: 300px;
+                width: 300px;
+                margin: 20px 0px 40px 40px;
+            }
+        }
+    }
+
+    .menu-pasta {
+        flex-direction: column-reverse;
+        gap: 0px;
+
+        .texto-pasta {
+            margin-left: 0px;
+            width: 350px;
+
+            h2 {
+                margin-bottom: 30px;
+                margin-left: 30px;
+            }
+
+            h3 {
+                margin-left: 80px;
+            }
+
+            div {
+                margin-left: 80px;
+            }
+        }
+
+        div {
+            img {
+                height: 300px;
+                width: 300px;
+                margin: 20px 0px 40px 25px;
+            }
+        }
+    }
+
+    .menu-tarta {
+        flex-direction: column;
+        gap: 0px;
+
+        .texto-tarta {
+            margin-left: 15px;
+            width: 350px;
+            height: 450px;
+
+            h2 {
+                margin-bottom: 30px;
+                margin-left: 20px;
+            }
+
+            h3 {
+                margin-left: 60px;
+            }
+
+            div {
+                margin-left: 60px;
+            }
+        }
+
+        div {
+            img {
+                height: 300px;
+                width: 300px;
+                margin: 20px 0px 40px 40px;
+            }
+        }
+    }
+
+
+}

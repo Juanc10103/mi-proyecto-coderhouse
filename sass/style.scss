@@ -1,0 +1,29 @@
+
+// import utilities
+@import "./utilities/maps";
+
+
+// import base
+@import "./base/reset";
+@import "./base/animaciones";
+
+
+// import layout
+@import "./layout/header";
+@import "./layout/main/index";
+@import "./layout/main/contacto";
+@import "./layout/main/sobremi";
+@import "./layout/main/carta";
+@import "./layout/main/carro";
+@import "./layout/footer";
+
+
+// medias queries
+@import "./layout/media/media1024";
+@import "./layout/media/media768";
+@import "./layout/media/media425";
+@import "./layout/media/media375";
+@import "./layout/media/media320";
+
+
+

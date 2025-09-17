@@ -1,0 +1,53 @@
+.contacto-main {
+    width: 80%;
+    margin: 100px 0px 0px 180px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    div {
+        iframe {
+            height: 600px;
+            width: 80%;
+        }
+    }
+
+    div {
+        form {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-family: "Roboto Condensed", sans-serif;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        a {
+            color: green;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 18px;
+
+            :hover {
+                color: darkgreen;
+            }
+        }
+    }
+}
+
+.formulario textarea,
+.formulario input {
+    border-radius: 5px;
+}
+
+.button-form {
+    width: 70px;
+    padding: 8px;
+    margin-left: 37%;
+    border-radius: 10px 5px;
+    background-color: white;
+
+    :hover {
+        background-color: rgb(194, 192, 192);
+    }
+}

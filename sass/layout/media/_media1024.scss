@@ -1,0 +1,113 @@
+ @media(max-width: 64rem) {
+
+     /* ---------------header -----------------*/
+     header {
+         display: flex;
+         height: 120px;
+         padding: 0px;
+
+         nav {
+             margin-right: 50px;
+             padding-top: 20px;
+         }
+     }
+
+     .logo-nombre {
+         margin-right: 0px;
+     }
+
+     /*----------------- main ----------------*/
+     .principal {
+         gap: 1.875rem;
+         margin: 20px;
+     }
+
+     .logo-main {
+         margin-top: 100px;
+         height: 350px;
+     }
+
+     .textoP {
+         margin-top: 70px;
+
+         h1 {
+             max-width: 80%;
+             margin: auto;
+             margin-top: 80px;
+             text-align: center;
+         }
+     }
+
+     .caja-vianda {
+         margin: 30px 30px 50px 30px;
+     }
+
+     .contentP {
+         gap: 1.5625rem;
+     }
+
+
+     //  ---------sobre mi --------------
+
+     .SM {
+         height: 100%;
+         gap: 110px;
+
+         .sobreMi {
+             width: 50%;
+
+             h2 {
+                 font-size: map-get($tamanios , lg);
+             }
+
+             p {
+                 font-size: map-get($tamanios , md);
+             }
+
+         }
+
+         .decoracionSM {
+             display: flex;
+             flex-direction: column;
+             padding-left: 0px;
+             margin-right: 10px;
+             gap: 10px;
+
+             img {
+                 height: 200px;
+             }
+         }
+     }
+
+
+     //  -----carro-----
+
+     .contenedor-compras {
+         margin-left: 150px;
+     }
+
+     .carritoTotal {
+         margin-left: 65%;
+         margin-top: 10px;
+     }
+
+
+     //  -----carta------
+
+     .menu-empanada {
+         .texto-empanada {
+             margin-left: 10%;
+         }
+     }
+     .menu-pasta{
+        margin-left: 10%;
+
+     }
+    .menu-tarta {
+         .texto-tarta {
+             margin-left: 10%;
+         }
+     }
+
+
+ }
