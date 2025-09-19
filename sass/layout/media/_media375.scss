@@ -1,36 +1,6 @@
 @media(max-width: 23.4375rem) {
+    
 
-    // ----header----
-    header {
-        height: 200px;
-        width: 100%;
-    }
-
-    nav {
-        width: 90%;
-        margin-left: 45px;
-    }
-
-
-
-
-    // -------main-------
-
-    .cartaB {
-        margin-left: 130px;
-    }
-
-    .logo-main {
-        margin: 0px;
-        height: 250px;
-        margin-left: 45px;
-    }
-
-    .caja-vianda {
-        margin-left: 40px;
-        margin-top: 70px;
-        width: 80%;
-    }
 
     //  ----contacto----
 
@@ -147,8 +117,7 @@
         gap: 0px;
 
         .texto-empanada {
-            margin-left: 15px;
-            width: 350px;
+
             height: 450px;
 
             h2 {
@@ -167,9 +136,10 @@
 
         div {
             img {
-                height: 300px;
-                width: 300px;
-                margin: 20px 0px 40px 40px;
+                 height: auto;
+                 width: 100%;
+                 margin: 0px 0px 30px 0px;
+                 border-radius: 0px;
             }
         }
     }
@@ -179,8 +149,7 @@
         gap: 0px;
 
         .texto-pasta {
-            margin-left: 0px;
-            width: 350px;
+
 
             h2 {
                 margin-bottom: 30px;
@@ -198,9 +167,10 @@
 
         div {
             img {
-                height: 300px;
-                width: 300px;
-                margin: 20px 0px 40px 25px;
+                 height: auto;
+                 width: 100%;
+                 margin: 0px 0px 30px 0px;
+                 border-radius: 0px;
             }
         }
     }
@@ -210,8 +180,7 @@
         gap: 0px;
 
         .texto-tarta {
-            margin-left: 15px;
-            width: 350px;
+
             height: 450px;
 
             h2 {
@@ -230,9 +199,10 @@
 
         div {
             img {
-                height: 300px;
-                width: 300px;
-                margin: 20px 0px 40px 40px;
+                 height: auto;
+                 width: 100%;
+                 margin: 0px 0px 30px 0px;
+                 border-radius: 0px;
             }
         }
     }

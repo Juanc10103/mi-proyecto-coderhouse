@@ -68,6 +68,25 @@ header {
   padding: 10px;
   font-family: "Roboto Condensed", sans-serif;
 }
+header nav {
+  margin: auto;
+  margin-right: 20px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  margin: 10px;
+}
+header nav ul li a {
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+header nav :hover {
+  color: white;
+}
 
 .carrito:hover {
   color: white;
@@ -88,24 +107,6 @@ header {
   font-family: "Playwrite PL", cursive;
 }
 
-ul {
-  list-style: none;
-  display: flex;
-}
-ul li {
-  margin: 10px;
-}
-
-nav a {
-  font-weight: 600;
-  padding-right: 10px;
-  text-decoration: none;
-  color: black;
-}
-nav a :hover {
-  color: white;
-}
-
 body {
   background-color: rgb(248, 232, 208);
   width: 100%;
@@ -119,25 +120,44 @@ main {
 
 .principal {
   display: flex;
-  gap: 150px;
-  justify-content: center;
+  gap: 40px;
+  margin: 50px;
 }
 .principal .textoP {
-  max-width: 500px;
-  justify-content: center;
-  margin-top: 7%;
+  margin-top: 150px;
+  max-width: 50vw;
+  text-align: center;
 }
 .principal .textoP h1 {
   color: tomato;
-  text-align: center;
   font-family: "Playwrite PL", cursive;
   font-size: 35px;
 }
 .principal .textoP p {
-  margin-bottom: 45px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
-  margin-left: 20px;
+}
+.principal .textoP .cartaB {
+  background-color: #fa5c4c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0px;
+}
+.principal .logo-main {
+  width: 75vw;
+  max-width: 400px;
+  min-width: 320px;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+.principal .logo-main img {
+  width: 100%;
+  border-radius: 15px;
 }
 
 p {
@@ -145,37 +165,16 @@ p {
   font-size: 18px;
 }
 
-.cartaB {
-  background-color: #fa5c4c;
-  color: white;
-  margin-left: 40%;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-}
-
 .principal a:hover {
   background-color: #cc3c2f;
 }
 
-.logo-main {
-  height: 400px;
-  margin: 90px 100px 50px 20px;
-  border-radius: 10px;
-}
-
 .caja-vianda {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
   text-align: center;
-  margin: 6.25rem;
   background-color: #e98542;
+  margin: 50px;
 }
-
-.contentP {
+.caja-vianda .contentP {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -183,7 +182,7 @@ p {
   padding: 10px 0px 30px 0px;
   align-items: stretch;
 }
-.contentP .viandaPrincipal {
+.caja-vianda .contentP .viandaPrincipal {
   background-color: white;
   width: 21.875rem;
   margin: 20px;
@@ -191,11 +190,11 @@ p {
   border-radius: 15px;
   text-align: center;
 }
-.contentP .viandaPrincipal:hover {
+.caja-vianda .contentP .viandaPrincipal:hover {
   transform: scale(1.03);
   cursor: pointer;
 }
-.contentP .viandaPrincipal .viandaA {
+.caja-vianda .contentP .viandaPrincipal .viandaA {
   width: 100%;
 }
 
@@ -505,7 +504,6 @@ hr {
     padding: 0px;
   }
   header nav {
-    margin-right: 50px;
     padding-top: 20px;
   }
   .logo-nombre {
@@ -514,23 +512,9 @@ hr {
   /*----------------- main ----------------*/
   .principal {
     gap: 1.875rem;
-    margin: 20px;
   }
-  .logo-main {
-    margin-top: 100px;
-    height: 350px;
-  }
-  .textoP {
-    margin-top: 70px;
-  }
-  .textoP h1 {
-    max-width: 80%;
-    margin: auto;
-    margin-top: 80px;
-    text-align: center;
-  }
-  .caja-vianda {
-    margin: 30px 30px 50px 30px;
+  .principal .textoP {
+    margin-top: 150px;
   }
   .contentP {
     gap: 1.5625rem;
@@ -581,7 +565,10 @@ hr {
     height: 170px;
     align-items: center;
   }
-  ul li {
+  header nav ul {
+    padding-left: 0px;
+  }
+  header nav ul li {
     margin: 10px;
   }
   .logo {
@@ -594,19 +581,21 @@ hr {
     font-size: 20px;
   }
   /*---------- main-------- */
-  .logo-main {
-    height: 300px;
-    margin: 150px 40px 0px 0px;
+  .principal {
+    flex-direction: column;
   }
-  .cartaB {
-    margin-left: 140px;
+  .principal .textoP {
+    justify-content: center;
+    min-width: 320px;
+    margin: auto;
   }
   .caja-vianda {
-    margin-top: 100px;
-    margin-left: 6.875rem;
-    width: 70%;
+    flex-direction: column;
+    width: 75vw;
+    margin: auto;
+    margin-bottom: 50px;
   }
-  .contentP {
+  .caja-vianda .contentP {
     gap: 1.25rem;
   }
   .contacto-main {
@@ -674,6 +663,13 @@ hr {
     display: flex;
     flex-direction: column;
     padding: 0px;
+    min-height: 200px;
+  }
+  header nav {
+    margin: auto;
+  }
+  header nav ul {
+    padding-left: 0px;
   }
   .logo-nombre {
     margin-top: 20px;
@@ -681,34 +677,25 @@ hr {
   .logo img {
     margin: 0px;
   }
-  nav {
-    margin-left: 30px;
-  }
   /* -----main----- */
   .principal {
     flex-direction: column;
-  }
-  .logo-main {
     margin: 0px;
-    height: 250px;
-    margin-left: 70px;
   }
-  .textoP {
-    margin-top: 60px;
+  .principal .textoP {
+    margin-top: 50px;
   }
-  .textoP p {
+  .principal .textoP p {
     font-size: 16px;
   }
-  .textoP h1 {
+  .principal .textoP h1 {
     margin-top: 0px;
     font-size: 30px;
   }
   .caja-vianda {
-    margin-left: 45px;
-    margin-top: 80px;
-    width: 80%;
+    width: 85vw;
   }
-  .contentP {
+  .caja-vianda .contentP {
     margin: 0px;
     align-items: center;
     gap: 1.25rem;
@@ -795,8 +782,8 @@ hr {
     gap: 0px;
   }
   .menu-empanada .texto-empanada {
-    margin-left: 15px;
-    width: 400px;
+    margin-left: 0px;
+    width: 100%;
   }
   .menu-empanada .texto-empanada h2 {
     margin-bottom: 30px;
@@ -809,13 +796,18 @@ hr {
     margin-left: 90px;
   }
   .menu-empanada div img {
-    height: 300px;
-    width: 300px;
-    margin: 20px 0px 40px 65px;
+    height: auto;
+    width: 100%;
+    margin: 0px 0px 40px 0px;
+    border-radius: 0px;
   }
   .menu-pasta {
     flex-direction: column-reverse;
     gap: 0px;
+    margin-left: 0px;
+  }
+  .menu-pasta .texto-pasta {
+    width: 100%;
   }
   .menu-pasta .texto-pasta h2 {
     margin-bottom: 30px;
@@ -828,17 +820,18 @@ hr {
     margin-left: 90px;
   }
   .menu-pasta div img {
-    height: 300px;
-    width: 300px;
-    margin: 20px 0px 40px 45px;
+    height: auto;
+    width: 100%;
+    margin: 0px 0px 40px 0px;
+    border-radius: 0px;
   }
   .menu-tarta {
     flex-direction: column;
     gap: 0px;
   }
   .menu-tarta .texto-tarta {
-    margin-left: 4%;
-    width: 400px;
+    margin-left: 0px;
+    width: 100%;
   }
   .menu-tarta .texto-tarta h2 {
     margin-bottom: 30px;
@@ -851,33 +844,13 @@ hr {
     margin-left: 90px;
   }
   .menu-tarta div img {
-    height: 300px;
-    width: 300px;
-    margin: 20px 0px 40px 65px;
+    height: auto;
+    width: 100%;
+    margin: 0px 0px 40px 0px;
+    border-radius: 0px;
   }
 }
 @media (max-width: 23.4375rem) {
-  header {
-    height: 200px;
-    width: 100%;
-  }
-  nav {
-    width: 90%;
-    margin-left: 45px;
-  }
-  .cartaB {
-    margin-left: 130px;
-  }
-  .logo-main {
-    margin: 0px;
-    height: 250px;
-    margin-left: 45px;
-  }
-  .caja-vianda {
-    margin-left: 40px;
-    margin-top: 70px;
-    width: 80%;
-  }
   .contacto-main {
     margin-top: 0px;
   }
@@ -950,8 +923,6 @@ hr {
     gap: 0px;
   }
   .menu-empanada .texto-empanada {
-    margin-left: 15px;
-    width: 350px;
     height: 450px;
   }
   .menu-empanada .texto-empanada h2 {
@@ -965,17 +936,14 @@ hr {
     margin-left: 80px;
   }
   .menu-empanada div img {
-    height: 300px;
-    width: 300px;
-    margin: 20px 0px 40px 40px;
+    height: auto;
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+    border-radius: 0px;
   }
   .menu-pasta {
     flex-direction: column-reverse;
     gap: 0px;
-  }
-  .menu-pasta .texto-pasta {
-    margin-left: 0px;
-    width: 350px;
   }
   .menu-pasta .texto-pasta h2 {
     margin-bottom: 30px;
@@ -988,17 +956,16 @@ hr {
     margin-left: 80px;
   }
   .menu-pasta div img {
-    height: 300px;
-    width: 300px;
-    margin: 20px 0px 40px 25px;
+    height: auto;
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+    border-radius: 0px;
   }
   .menu-tarta {
     flex-direction: column;
     gap: 0px;
   }
   .menu-tarta .texto-tarta {
-    margin-left: 15px;
-    width: 350px;
     height: 450px;
   }
   .menu-tarta .texto-tarta h2 {
@@ -1012,41 +979,27 @@ hr {
     margin-left: 60px;
   }
   .menu-tarta div img {
-    height: 300px;
-    width: 300px;
-    margin: 20px 0px 40px 40px;
+    height: auto;
+    width: 100%;
+    margin: 0px 0px 30px 0px;
+    border-radius: 0px;
   }
 }
 @media (max-width: 320px) {
   header {
     flex-direction: column;
     padding: 0px;
-    width: 100%;
     align-content: center;
-    height: 200px;
-  }
-  header nav {
-    width: 100%;
-    margin-left: 30px;
   }
   /* ----main----- */
-  .principal div figure img {
-    margin-left: 2.5rem;
-  }
-  .cartaB {
-    margin-left: 100px;
-  }
-  .logo-main {
+  .principal .logo-main img {
+    border-radius: 0px;
     margin: 0px;
-    height: 200px;
-    margin-left: 35px;
   }
   .caja-vianda {
-    margin-top: 50px;
-    margin-left: 20px;
-    width: 90%;
+    width: 100vw;
   }
-  .contentP {
+  .caja-vianda .contentP {
     margin: 0px;
   }
   .contacto-main div iframe {
@@ -1112,74 +1065,66 @@ hr {
   }
   .menu-empanada {
     flex-direction: column;
-    gap: 0px;
-  }
-  .menu-empanada .texto-empanada {
-    margin-left: 10px;
-    width: 300px;
   }
   .menu-empanada .texto-empanada h2 {
     margin-bottom: 30px;
-    margin-left: 30px;
+    margin-left: 20px;
   }
   .menu-empanada .texto-empanada h3 {
-    margin-left: 60px;
+    margin-left: 50px;
   }
   .menu-empanada .texto-empanada div {
-    margin-left: 60px;
+    margin-left: 50px;
   }
   .menu-empanada div img {
-    height: 250px;
-    width: 250px;
-    margin: 20px 0px 40px 40px;
+    height: auto;
+    width: 100%;
+    margin: 0px 0px 25px 0px;
+    border-radius: 0px;
   }
   .menu-pasta {
     flex-direction: column-reverse;
-    gap: 0px;
   }
   .menu-pasta .texto-pasta {
-    margin-left: 0px;
-    width: 300px;
     height: 500px;
   }
   .menu-pasta .texto-pasta h2 {
     margin-bottom: 30px;
-    margin-left: 30px;
+    margin-left: 20px;
   }
   .menu-pasta .texto-pasta h3 {
-    margin-left: 60px;
+    margin-left: 50px;
   }
   .menu-pasta .texto-pasta div {
-    margin-left: 60px;
+    margin-left: 50px;
   }
   .menu-pasta div img {
-    height: 250px;
-    width: 250px;
-    margin: 20px 0px 40px 25px;
+    height: auto;
+    width: 100%;
+    margin: 0px 0px 25px 0px;
+    border-radius: 0px;
   }
   .menu-tarta {
     flex-direction: column;
-    gap: 0px;
   }
   .menu-tarta .texto-tarta {
-    margin-left: 10px;
-    width: 300px;
     height: 500px;
   }
   .menu-tarta .texto-tarta h2 {
     margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: 15px;
   }
   .menu-tarta .texto-tarta h3 {
-    margin-left: 40px;
+    margin-left: 30px;
   }
   .menu-tarta .texto-tarta div {
-    margin-left: 40px;
+    margin-left: 30px;
   }
   .menu-tarta div img {
-    height: 250px;
-    width: 250px;
-    margin: 20px 0px 40px 40px;
+    height: auto;
+    width: 100%;
+    margin: 0px 0px 25px 0px;
+    border-radius: 0px;
   }
 }
 

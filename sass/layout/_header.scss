@@ -5,6 +5,31 @@ header {
     align-items: center;
     padding: 10px;
     font-family: "Roboto Condensed", sans-serif;
+
+
+
+    nav {
+        margin: auto;
+        margin-right: 20px;
+        ul {
+            list-style: none;
+            display: flex;
+
+            li {
+                margin: 10px;
+
+                a {
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+
+        :hover {
+            color: white;
+        }
+    }
 }
 
 .carrito:hover {
@@ -25,24 +50,4 @@ header {
 .logo-nombre {
     font-size: 20px;
     font-family: "Playwrite PL", cursive;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-
-    li {
-        margin: 10px;
-    }
-}
-
-nav a {
-    font-weight: 600;
-    padding-right: 10px;
-    text-decoration: none;
-    color: black;
-
-    :hover {
-        color: white;
-    }
 }

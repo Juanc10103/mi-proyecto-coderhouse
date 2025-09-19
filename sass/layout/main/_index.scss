@@ -11,28 +11,50 @@
 
  .principal {
      display: flex;
-     gap: 150px;
-     justify-content: center;
+     gap: 40px;
+     margin: 50px;
 
      .textoP {
-         max-width: 500px;
-         justify-content: center;
-         margin-top: 7%;
+         margin-top: 150px;
+         max-width: 50vw;
+         text-align: center;
 
          h1 {
              color: tomato;
-             text-align: center;
              font-family: "Playwrite PL", cursive;
              font-size: 35px;
          }
 
          p {
-             margin-bottom: 45px;
              font-family: "Roboto Condensed", sans-serif;
              font-size: map-get($tamanios , md);
-             margin-left: 20px;
          }
 
+         .cartaB {
+             background-color: #fa5c4c;
+             color: white;
+             padding: 10px 20px;
+             border-radius: 8px;
+             border: none;
+             cursor: pointer;
+             text-decoration: none;
+             margin: 0px;
+         }
+
+     }
+
+     .logo-main {
+         width: 75vw;
+         max-width: 400px;
+         min-width: 320px;
+         margin: auto;
+         margin-top: 70px;
+         margin-bottom: 80px;
+
+         img {
+             width: 100%;
+             border-radius: 15px;
+         }
      }
 
  }
@@ -43,66 +65,50 @@
  }
 
 
- .cartaB {
-     background-color: #fa5c4c;
-     color: white;
-     margin-left: 40%;
-     padding: 10px 20px;
-     border-radius: 8px;
-     border: none;
-     cursor: pointer;
-     text-decoration: none;
- }
 
  .principal a:hover {
      background-color: #cc3c2f;
  }
 
 
- .logo-main {
-     height: 400px;
-     margin: 90px 100px 50px 20px;
-     border-radius: 10px;
- }
-
 
  .caja-vianda {
-     display: flex;
-     flex-direction: column;
-     align-content: center;
      text-align: center;
-     margin: 6.25rem;
      background-color: map-get($colores, color5);
- }
+     margin: 50px;
 
- .contentP {
-     display: flex;
-     justify-content: center;
-     flex-wrap: wrap;
-     gap: 80px;
-     padding: 10px 0px 30px 0px;
-     align-items: stretch;
 
-     .viandaPrincipal {
-         background-color: white;
-         width: 21.875rem;
-         margin: 20px;
-         padding: 10px 20px;
-         border-radius: 15px;
-         text-align: center;
+     .contentP {
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+         gap: 80px;
+         padding: 10px 0px 30px 0px;
+         align-items: stretch;
 
-         &:hover {
-             transform: scale(1.03);
-             cursor: pointer;
+         .viandaPrincipal {
+             background-color: white;
+             width: 21.875rem;
+             margin: 20px;
+             padding: 10px 20px;
+             border-radius: 15px;
+             text-align: center;
+
+             &:hover {
+                 transform: scale(1.03);
+                 cursor: pointer;
+             }
+
+
+             .viandaA {
+                 width: 100%;
+             }
          }
 
-
-         .viandaA {
-             width: 100%;
-         }
      }
-
  }
+
+
 
 
  .tamañosViandas {

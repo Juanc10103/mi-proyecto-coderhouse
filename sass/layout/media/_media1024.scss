@@ -5,9 +5,7 @@
          display: flex;
          height: 120px;
          padding: 0px;
-
          nav {
-             margin-right: 50px;
              padding-top: 20px;
          }
      }
@@ -19,27 +17,11 @@
      /*----------------- main ----------------*/
      .principal {
          gap: 1.875rem;
-         margin: 20px;
-     }
 
-     .logo-main {
-         margin-top: 100px;
-         height: 350px;
-     }
-
-     .textoP {
-         margin-top: 70px;
-
-         h1 {
-             max-width: 80%;
-             margin: auto;
-             margin-top: 80px;
-             text-align: center;
+         .textoP {
+             margin-top: 150px;
          }
-     }
 
-     .caja-vianda {
-         margin: 30px 30px 50px 30px;
      }
 
      .contentP {
@@ -99,11 +81,13 @@
              margin-left: 10%;
          }
      }
-     .menu-pasta{
-        margin-left: 10%;
+
+     .menu-pasta {
+         margin-left: 10%;
 
      }
-    .menu-tarta {
+
+     .menu-tarta {
          .texto-tarta {
              margin-left: 10%;
          }
