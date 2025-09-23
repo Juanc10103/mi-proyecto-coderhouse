@@ -67,36 +67,22 @@
 
      .contacto-main {
          flex-direction: column;
-         margin: 50px;
+         margin: 50px 0px 0px 0px;
 
          div {
-             iframe {
-                 margin: 50px 0px 0px 30px;
-                 max-height: 250px;
-             }
-
              p {
                  text-align: center;
-                 margin-right: 30px;
              }
          }
 
          div {
+             max-width: 300px;
+             min-width: 100px;
+
              a {
-                 margin-left: 35px;
                  font-size: map-get($tamanios , md);
-                 text-align: center;
              }
 
-             form {
-                 margin-left: 55px;
-                 width: 65%;
-             }
-
-         }
-
-         .button-form {
-             margin: 0px 0px 0px 80px;
          }
 
      }
@@ -108,15 +94,15 @@
          gap: 20px;
 
          .sobreMi {
-             margin: 20px 0px;
-             width: 90%;
+             margin: auto;
+             margin-top: 50px;
+             min-width: 320px;
+             max-height: 500px;
+             min-height: 200px;
          }
 
          .decoracionSM {
-
-             img {
-                 margin: 0px 0px 0px 90px;
-             }
+             margin: auto;
 
              .img-uno {
                  height: 250px;
@@ -168,9 +154,6 @@
                  }
 
              }
-
-
-
          }
 
      }
@@ -181,108 +164,23 @@
      }
 
 
-     footer {
-         margin: 0px;
-     }
-
-
      //  -----carta-----
 
-     .menu-empanada {
-         flex-direction: column;
-         gap: 0px;
+     .estiloMenu {
+         width: 100vw;
 
-         .texto-empanada {
-             margin-left: 0px;
+         .menu-empanada {
              width: 100%;
-
-             h2 {
-                 margin-bottom: 30px;
-                 margin-left: 50px;
-             }
-
-             h3 {
-                 margin-left: 90px;
-             }
-
-             div {
-                 margin-left: 90px;
-             }
          }
 
-         div {
-             img {
-                 height: auto;
-                 width: 100%;
-                 margin: 0px 0px 40px 0px;
-                 border-radius: 0px;
-             }
+         .menu-pasta {
+             width: 100%;
+         }
+
+         .menu-tarta {
+             width: 100%;
          }
 
      }
 
-     .menu-pasta {
-         flex-direction: column-reverse;
-         gap: 0px;
-         margin-left: 0px;
-
-         .texto-pasta {
-             width: 100%;
-
-             h2 {
-                 margin-bottom: 30px;
-                 margin-left: 50px;
-             }
-
-             h3 {
-                 margin-left: 90px;
-             }
-
-             div {
-                 margin-left: 90px;
-             }
-         }
-
-         div {
-             img {
-                 height: auto;
-                 width: 100%;
-                 margin: 0px 0px 40px 0px;
-                 border-radius: 0px;
-             }
-         }
-
-     }
-
-     .menu-tarta {
-         flex-direction: column;
-         gap: 0px;
-
-         .texto-tarta {
-             margin-left: 0px;
-             width: 100%;
-
-             h2 {
-                 margin-bottom: 30px;
-                 margin-left: 50px;
-             }
-
-             h3 {
-                 margin-left: 90px;
-             }
-
-             div {
-                 margin-left: 90px;
-             }
-         }
-
-         div {
-             img {
-                 height: auto;
-                 width: 100%;
-                 margin: 0px 0px 40px 0px;
-                 border-radius: 0px;
-             }
-         }
-     }
  }

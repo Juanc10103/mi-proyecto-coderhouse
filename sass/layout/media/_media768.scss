@@ -54,100 +54,98 @@
      // ---------- contacto---------
 
      .contacto-main {
-         margin: 70px 0px 0px 100px;
+         gap: 20px;
 
          div {
              p {
                  text-align: center;
              }
          }
-
-         div {
-             a {
-                 margin-left: 30px;
-                 text-align: center;
-             }
-         }
-
      }
 
 
      // ----sobre mi----
      .SM {
-         gap: 60px;
+         .sobreMi {
+             margin-top: 50px;
+             min-width: 250px;
+         }
+
+         .decoracionSM {
+             margin-top: 70px;
+             min-width: 150px;
+         }
      }
 
      //  -----carro-----
 
-     .contenedor-compras {
-         margin-left: 80px;
-         width: 80%;
-
-         .compras {
-             margin-left: 30px;
-         }
-
-     }
 
      .carritoTotal {
          margin-left: 60%;
          margin-top: 10px;
      }
-
-
-
      //  -----carta-----
 
+     .estiloMenu {
+         .menu-empanada {
+             width: 90%;
+             gap: 0px;
+             flex-direction: column;
 
-     .menu-empanada {
-         gap: 30px;
-
-         .texto-empanada {
-             margin-left: 4%;
-             width: 450px;
-         }
-
-         div {
-             img {
-                 height: 260px;
-                 width: 260px;
-                 margin-right: 20px;
+             .texto-empanada {
+                 width: 100%;
              }
-         }
-     }
 
-     .menu-pasta {
-         margin-left: 4%;
-         gap: 30px;
+             div {
+                 img {
+                     margin-top: 0px;
+                     border-radius: 0px;
+                     height: 280px;
+                     min-width: 320px;
+                     width: 100%;
 
-         .texto-pasta {
-             width: 400px;
-         }
-
-         div {
-             img {
-                 height: 260px;
-                 width: 260px;
+                 }
              }
          }
 
-     }
+         .menu-pasta {
+             flex-direction: column-reverse;
+             gap: 0px;
+             width: 90%;
 
-     .menu-tarta {
-         gap: 30px;
+             .texto-pasta {
+                 width: 100%;
+             }
 
-         .texto-tarta {
-             margin-left: 4%;
-             width: 450px;
+             div {
+                 img {
+                     margin-top: 0px;
+                     border-radius: 0px;
+                     height: 280px;
+                     width: 100%;
+                     min-width: 320px;
+                 }
+             }
          }
 
-         div {
-             img {
-                 height: 260px;
-                 width: 260px;
-                 margin-right: 20px;
+         .menu-tarta {
+             flex-direction: column;
+             gap: 0px;
+             width: 90%;
+
+             .texto-tarta {
+                 width: 100%;
+             }
+
+             div {
+                 img {
+                     margin-top: 0px;
+                     border-radius: 0px;
+                     height: 280px;
+                     min-width: 320px;
+                     width: 100%;
+                 }
              }
          }
      }
-
  }

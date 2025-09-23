@@ -203,15 +203,21 @@ p {
 }
 
 .contacto-main {
-  width: 80%;
-  margin: 100px 0px 0px 180px;
   display: flex;
   justify-content: center;
-  gap: 40px;
+}
+.contacto-main div {
+  width: 75vw;
+  margin: 50px 100px;
 }
 .contacto-main div iframe {
-  height: 600px;
-  width: 80%;
+  width: 100%;
+}
+.contacto-main div {
+  margin: 50px 100px;
+  max-width: 300px;
+  min-width: 50px;
+  text-align: center;
 }
 .contacto-main div form {
   display: flex;
@@ -226,6 +232,9 @@ p {
   text-decoration: underline;
   font-weight: bold;
   font-size: 18px;
+  text-align: center;
+  max-width: 200px;
+  min-width: 50px;
 }
 .contacto-main div a :hover {
   color: darkgreen;
@@ -239,9 +248,9 @@ p {
 .button-form {
   width: 70px;
   padding: 8px;
-  margin-left: 37%;
   border-radius: 10px 5px;
   background-color: white;
+  margin: auto;
 }
 .button-form :hover {
   background-color: rgb(194, 192, 192);
@@ -249,51 +258,49 @@ p {
 
 .SM {
   display: flex;
-  height: 700px;
   gap: 20px;
 }
-
-.sobreMi {
-  margin: 20px 0px 0px 20px;
-  padding: 40px;
+.SM .sobreMi {
+  margin: auto;
+  margin-left: 20px;
+  width: 75vw;
+  max-width: 1000px;
+  min-width: 500px;
+  max-height: 600px;
+  min-height: 400px;
   background-color: #fde3bd;
-  height: 70%;
-  width: 55%;
-  align-self: center;
 }
-.sobreMi h2 {
+.SM .sobreMi h2 {
+  margin: 40px 0px 0px 40px;
   color: #e6533c;
   font-family: "Dancing Script", cursive;
   font-size: 34px;
 }
-.sobreMi p {
+.SM .sobreMi p {
+  margin-left: 20px;
   font-size: 22px;
   color: #333;
+  height: 100%;
 }
-
-.decoracionSM {
-  margin-top: 20px;
-  padding-left: 70px;
+.SM .decoracionSM {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 50px;
 }
-.decoracionSM img {
-  height: 250px;
+.SM .decoracionSM img {
+  height: 200px;
   border-radius: 30px;
 }
-
-.img-uno {
+.SM .decoracionSM .img-uno {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-
-.img-dos {
+.SM .decoracionSM .img-dos {
   grid-column: 2/3;
   grid-row: 2/3;
 }
-
-.img-tres {
+.SM .decoracionSM .img-tres {
   grid-column: 1/2;
   grid-row: 3/4;
   width: 100%;
@@ -302,6 +309,9 @@ p {
 .estiloMenu {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 75vw;
   gap: 20px;
 }
 .estiloMenu p {
@@ -320,14 +330,16 @@ p {
 
 .menu-empanada {
   display: flex;
-  gap: 50px;
+  gap: 10px;
 }
 .menu-empanada .texto-empanada {
   align-content: center;
   background-color: #f9b84a;
-  width: 500px;
-  height: 400px;
-  margin: 30px 0px 0px 25%;
+  max-width: 600px;
+  min-width: 320px;
+  max-height: 600px;
+  min-height: 400px;
+  margin: 10px 0px 0px 0px;
 }
 .menu-empanada .texto-empanada h2 {
   margin-bottom: 30px;
@@ -342,21 +354,22 @@ p {
 .menu-empanada div img {
   height: 300px;
   width: 300px;
-  margin-top: 100px;
+  margin-top: 30px;
   border-radius: 70px 70px 0px 0px;
 }
 
 .menu-pasta {
   display: flex;
-  gap: 50px;
-  margin-left: 25%;
+  gap: 10px;
 }
 .menu-pasta .texto-pasta {
   align-content: center;
   background-color: #f9b84a;
-  width: 500px;
-  height: 500px;
-  margin: 30px 0px 0px 0px;
+  max-width: 600px;
+  min-width: 320px;
+  max-height: 600px;
+  min-height: 400px;
+  margin: 0px;
 }
 .menu-pasta .texto-pasta h2 {
   margin-bottom: 30px;
@@ -371,20 +384,22 @@ p {
 .menu-pasta div img {
   height: 300px;
   width: 300px;
-  margin-top: 130px;
+  margin-top: 30px;
   border-radius: 70px 70px 0px 0px;
 }
 
 .menu-tarta {
   display: flex;
-  gap: 50px;
+  gap: 10px;
 }
 .menu-tarta .texto-tarta {
   align-content: center;
   background-color: #f9b84a;
-  width: 500px;
-  height: 400px;
-  margin: 30px 0px 0px 25%;
+  max-width: 600px;
+  min-width: 320px;
+  max-height: 600px;
+  min-height: 400px;
+  margin: 0px;
 }
 .menu-tarta .texto-tarta h2 {
   margin-bottom: 30px;
@@ -399,7 +414,7 @@ p {
 .menu-tarta div img {
   height: 300px;
   width: 300px;
-  margin-top: 100px;
+  margin-top: 30px;
   border-radius: 70px 70px 0px 0px;
 }
 
@@ -422,10 +437,10 @@ p {
 }
 
 .contenedor-compras {
-  margin: 60px 0px 0px 250px;
+  margin: auto;
   background-color: #fde3bd;
   height: 500px;
-  width: 70%;
+  width: 75vw;
   border-radius: 10px;
 }
 .contenedor-compras .compras {
@@ -434,7 +449,7 @@ p {
   gap: 1px;
   height: 80%;
   width: 90%;
-  margin: 10px 40px;
+  margin: auto;
   padding-top: 70px;
 }
 .contenedor-compras .compras .pedido {
@@ -483,6 +498,9 @@ footer {
   padding: 40px;
   margin-top: 20px;
 }
+footer div {
+  text-align: center;
+}
 footer div a {
   margin-left: 25px;
   text-decoration: none;
@@ -519,12 +537,18 @@ hr {
   .contentP {
     gap: 1.5625rem;
   }
+  .contacto-main {
+    margin: 50px 20px 0px 20px;
+  }
+  .contacto-main div {
+    margin: auto;
+  }
   .SM {
-    height: 100%;
-    gap: 110px;
+    gap: 20px;
   }
   .SM .sobreMi {
-    width: 50%;
+    margin: auto;
+    margin-top: 100px;
   }
   .SM .sobreMi h2 {
     font-size: 22px;
@@ -540,23 +564,11 @@ hr {
     gap: 10px;
   }
   .SM .decoracionSM img {
-    height: 200px;
-  }
-  .contenedor-compras {
-    margin-left: 150px;
+    height: 150px;
   }
   .carritoTotal {
     margin-left: 65%;
     margin-top: 10px;
-  }
-  .menu-empanada .texto-empanada {
-    margin-left: 10%;
-  }
-  .menu-pasta {
-    margin-left: 10%;
-  }
-  .menu-tarta .texto-tarta {
-    margin-left: 10%;
   }
 }
 @media (max-width: 48rem) {
@@ -599,63 +611,67 @@ hr {
     gap: 1.25rem;
   }
   .contacto-main {
-    margin: 70px 0px 0px 100px;
+    gap: 20px;
   }
   .contacto-main div p {
     text-align: center;
   }
-  .contacto-main div a {
-    margin-left: 30px;
-    text-align: center;
+  .SM .sobreMi {
+    margin-top: 50px;
+    min-width: 250px;
   }
-  .SM {
-    gap: 60px;
-  }
-  .contenedor-compras {
-    margin-left: 80px;
-    width: 80%;
-  }
-  .contenedor-compras .compras {
-    margin-left: 30px;
+  .SM .decoracionSM {
+    margin-top: 70px;
+    min-width: 150px;
   }
   .carritoTotal {
     margin-left: 60%;
     margin-top: 10px;
   }
-  .menu-empanada {
-    gap: 30px;
+  .estiloMenu .menu-empanada {
+    width: 90%;
+    gap: 0px;
+    flex-direction: column;
   }
-  .menu-empanada .texto-empanada {
-    margin-left: 4%;
-    width: 450px;
+  .estiloMenu .menu-empanada .texto-empanada {
+    width: 100%;
   }
-  .menu-empanada div img {
-    height: 260px;
-    width: 260px;
-    margin-right: 20px;
+  .estiloMenu .menu-empanada div img {
+    margin-top: 0px;
+    border-radius: 0px;
+    height: 280px;
+    min-width: 320px;
+    width: 100%;
   }
-  .menu-pasta {
-    margin-left: 4%;
-    gap: 30px;
+  .estiloMenu .menu-pasta {
+    flex-direction: column-reverse;
+    gap: 0px;
+    width: 90%;
   }
-  .menu-pasta .texto-pasta {
-    width: 400px;
+  .estiloMenu .menu-pasta .texto-pasta {
+    width: 100%;
   }
-  .menu-pasta div img {
-    height: 260px;
-    width: 260px;
+  .estiloMenu .menu-pasta div img {
+    margin-top: 0px;
+    border-radius: 0px;
+    height: 280px;
+    width: 100%;
+    min-width: 320px;
   }
-  .menu-tarta {
-    gap: 30px;
+  .estiloMenu .menu-tarta {
+    flex-direction: column;
+    gap: 0px;
+    width: 90%;
   }
-  .menu-tarta .texto-tarta {
-    margin-left: 4%;
-    width: 450px;
+  .estiloMenu .menu-tarta .texto-tarta {
+    width: 100%;
   }
-  .menu-tarta div img {
-    height: 260px;
-    width: 260px;
-    margin-right: 20px;
+  .estiloMenu .menu-tarta div img {
+    margin-top: 0px;
+    border-radius: 0px;
+    height: 280px;
+    min-width: 320px;
+    width: 100%;
   }
 }
 @media (max-width: 26.5625rem) {
@@ -705,38 +721,31 @@ hr {
   }
   .contacto-main {
     flex-direction: column;
-    margin: 50px;
-  }
-  .contacto-main div iframe {
-    margin: 50px 0px 0px 30px;
-    max-height: 250px;
+    margin: 50px 0px 0px 0px;
   }
   .contacto-main div p {
     text-align: center;
-    margin-right: 30px;
+  }
+  .contacto-main div {
+    max-width: 300px;
+    min-width: 100px;
   }
   .contacto-main div a {
-    margin-left: 35px;
     font-size: 18px;
-    text-align: center;
-  }
-  .contacto-main div form {
-    margin-left: 55px;
-    width: 65%;
-  }
-  .contacto-main .button-form {
-    margin: 0px 0px 0px 80px;
   }
   .SM {
     flex-direction: column;
     gap: 20px;
   }
   .SM .sobreMi {
-    margin: 20px 0px;
-    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    min-width: 320px;
+    max-height: 500px;
+    min-height: 200px;
   }
-  .SM .decoracionSM img {
-    margin: 0px 0px 0px 90px;
+  .SM .decoracionSM {
+    margin: auto;
   }
   .SM .decoracionSM .img-uno {
     height: 250px;
@@ -774,112 +783,23 @@ hr {
     margin-left: 50%;
     margin-top: 30px;
   }
-  footer {
-    margin: 0px;
+  .estiloMenu {
+    width: 100vw;
   }
-  .menu-empanada {
-    flex-direction: column;
-    gap: 0px;
-  }
-  .menu-empanada .texto-empanada {
-    margin-left: 0px;
+  .estiloMenu .menu-empanada {
     width: 100%;
   }
-  .menu-empanada .texto-empanada h2 {
-    margin-bottom: 30px;
-    margin-left: 50px;
-  }
-  .menu-empanada .texto-empanada h3 {
-    margin-left: 90px;
-  }
-  .menu-empanada .texto-empanada div {
-    margin-left: 90px;
-  }
-  .menu-empanada div img {
-    height: auto;
-    width: 100%;
-    margin: 0px 0px 40px 0px;
-    border-radius: 0px;
-  }
-  .menu-pasta {
-    flex-direction: column-reverse;
-    gap: 0px;
-    margin-left: 0px;
-  }
-  .menu-pasta .texto-pasta {
+  .estiloMenu .menu-pasta {
     width: 100%;
   }
-  .menu-pasta .texto-pasta h2 {
-    margin-bottom: 30px;
-    margin-left: 50px;
-  }
-  .menu-pasta .texto-pasta h3 {
-    margin-left: 90px;
-  }
-  .menu-pasta .texto-pasta div {
-    margin-left: 90px;
-  }
-  .menu-pasta div img {
-    height: auto;
+  .estiloMenu .menu-tarta {
     width: 100%;
-    margin: 0px 0px 40px 0px;
-    border-radius: 0px;
-  }
-  .menu-tarta {
-    flex-direction: column;
-    gap: 0px;
-  }
-  .menu-tarta .texto-tarta {
-    margin-left: 0px;
-    width: 100%;
-  }
-  .menu-tarta .texto-tarta h2 {
-    margin-bottom: 30px;
-    margin-left: 50px;
-  }
-  .menu-tarta .texto-tarta h3 {
-    margin-left: 90px;
-  }
-  .menu-tarta .texto-tarta div {
-    margin-left: 90px;
-  }
-  .menu-tarta div img {
-    height: auto;
-    width: 100%;
-    margin: 0px 0px 40px 0px;
-    border-radius: 0px;
   }
 }
 @media (max-width: 23.4375rem) {
-  .contacto-main {
-    margin-top: 0px;
-  }
-  .contacto-main div iframe {
-    margin-left: 20px;
-  }
   .contacto-main div p {
     font-size: 16px;
     text-align: center;
-  }
-  .contacto-main div a {
-    margin-left: 60px;
-  }
-  .contacto-main div form {
-    margin-left: 40px;
-    width: 65%;
-  }
-  .contacto-main .button-form {
-    margin-left: 65px;
-  }
-  .SM {
-    flex-direction: column;
-  }
-  .SM .sobreMi {
-    margin: 20px 0px 0px 0px;
-    width: 90%;
-  }
-  .SM .decoracionSM img {
-    margin: 0px 0px 0px 75px;
   }
   .SM .decoracionSM .img-uno {
     height: 230px;
@@ -893,96 +813,36 @@ hr {
     height: 230px;
     width: 230px;
   }
-  .contenedor-compras {
-    width: 100%;
-    height: 320px;
-    margin-top: 20px;
+  .menu-empanada .texto-empanada h2 {
+    margin-left: 20px;
   }
-  .contenedor-compras .compras {
-    width: 95%;
-    margin: 10px 0px 0px 10px;
-    padding-top: 25px;
+  .menu-empanada .texto-empanada h3 {
+    margin-left: 30px;
   }
-  .contenedor-compras .compras .pedido img {
-    height: 110px;
-    width: 130px;
-    margin: 10px;
+  .menu-empanada .texto-empanada div {
+    margin-left: 40px;
   }
-  .contenedor-compras .compras .pedido div h3 {
-    font-size: 16px;
+  .menu-pasta .texto-pasta h2 {
+    margin-left: 20px;
   }
-  .contenedor-compras .compras .pedido div p {
-    font-size: 16px;
+  .menu-pasta .texto-pasta h3 {
+    margin-left: 30px;
+  }
+  .menu-pasta .texto-pasta div {
+    margin-left: 40px;
+  }
+  .menu-tarta .texto-tarta h2 {
+    margin-left: 20px;
+  }
+  .menu-tarta .texto-tarta h3 {
+    margin-left: 30px;
+  }
+  .menu-tarta .texto-tarta div {
+    margin-left: 40px;
   }
   .carritoTotal {
     margin-left: 50%;
     margin-top: 30px;
-  }
-  .menu-empanada {
-    flex-direction: column;
-    gap: 0px;
-  }
-  .menu-empanada .texto-empanada {
-    height: 450px;
-  }
-  .menu-empanada .texto-empanada h2 {
-    margin-bottom: 30px;
-    margin-left: 30px;
-  }
-  .menu-empanada .texto-empanada h3 {
-    margin-left: 80px;
-  }
-  .menu-empanada .texto-empanada div {
-    margin-left: 80px;
-  }
-  .menu-empanada div img {
-    height: auto;
-    width: 100%;
-    margin: 0px 0px 30px 0px;
-    border-radius: 0px;
-  }
-  .menu-pasta {
-    flex-direction: column-reverse;
-    gap: 0px;
-  }
-  .menu-pasta .texto-pasta h2 {
-    margin-bottom: 30px;
-    margin-left: 30px;
-  }
-  .menu-pasta .texto-pasta h3 {
-    margin-left: 80px;
-  }
-  .menu-pasta .texto-pasta div {
-    margin-left: 80px;
-  }
-  .menu-pasta div img {
-    height: auto;
-    width: 100%;
-    margin: 0px 0px 30px 0px;
-    border-radius: 0px;
-  }
-  .menu-tarta {
-    flex-direction: column;
-    gap: 0px;
-  }
-  .menu-tarta .texto-tarta {
-    height: 450px;
-  }
-  .menu-tarta .texto-tarta h2 {
-    margin-bottom: 30px;
-    margin-left: 20px;
-  }
-  .menu-tarta .texto-tarta h3 {
-    margin-left: 60px;
-  }
-  .menu-tarta .texto-tarta div {
-    margin-left: 60px;
-  }
-  .menu-tarta div img {
-    height: auto;
-    width: 100%;
-    margin: 0px 0px 30px 0px;
-    border-radius: 0px;
   }
 }
 @media (max-width: 320px) {
@@ -1002,29 +862,12 @@ hr {
   .caja-vianda .contentP {
     margin: 0px;
   }
-  .contacto-main div iframe {
-    margin-left: 10px;
-  }
-  .contacto-main div a {
-    margin: 0px 0px 25px 40px;
-  }
-  .contacto-main div form {
-    margin-left: 30px;
-    gap: 10px;
-  }
-  .contacto-main .button-form {
-    margin-left: 50px;
-  }
   .SM {
     flex-direction: column;
     gap: 20px;
   }
   .SM .sobreMi {
-    margin: 20px 0px;
-    width: 90%;
-  }
-  .SM .decoracionSM img {
-    margin: 0px 0px 0px 50px;
+    min-width: 320px;
   }
   .SM .decoracionSM .img-uno {
     height: 230px;
@@ -1038,93 +881,9 @@ hr {
     height: 230px;
     width: 230px;
   }
-  .contenedor-compras {
-    width: 100%;
-    height: 320px;
-    margin-top: 20px;
-  }
-  .contenedor-compras .compras {
-    width: 95%;
-    margin: 10px 0px 0px 10px;
-    padding-top: 25px;
-  }
-  .contenedor-compras .compras .pedido img {
-    height: 100px;
-    width: 120px;
-    margin: 10px;
-  }
-  .contenedor-compras .compras .pedido div h3 {
-    font-size: 16px;
-  }
-  .contenedor-compras .compras .pedido div p {
-    font-size: 16px;
-  }
   .carritoTotal {
     margin-left: 50%;
     margin-top: 30px;
-  }
-  .menu-empanada {
-    flex-direction: column;
-  }
-  .menu-empanada .texto-empanada h2 {
-    margin-bottom: 30px;
-    margin-left: 20px;
-  }
-  .menu-empanada .texto-empanada h3 {
-    margin-left: 50px;
-  }
-  .menu-empanada .texto-empanada div {
-    margin-left: 50px;
-  }
-  .menu-empanada div img {
-    height: auto;
-    width: 100%;
-    margin: 0px 0px 25px 0px;
-    border-radius: 0px;
-  }
-  .menu-pasta {
-    flex-direction: column-reverse;
-  }
-  .menu-pasta .texto-pasta {
-    height: 500px;
-  }
-  .menu-pasta .texto-pasta h2 {
-    margin-bottom: 30px;
-    margin-left: 20px;
-  }
-  .menu-pasta .texto-pasta h3 {
-    margin-left: 50px;
-  }
-  .menu-pasta .texto-pasta div {
-    margin-left: 50px;
-  }
-  .menu-pasta div img {
-    height: auto;
-    width: 100%;
-    margin: 0px 0px 25px 0px;
-    border-radius: 0px;
-  }
-  .menu-tarta {
-    flex-direction: column;
-  }
-  .menu-tarta .texto-tarta {
-    height: 500px;
-  }
-  .menu-tarta .texto-tarta h2 {
-    margin-bottom: 30px;
-    margin-left: 15px;
-  }
-  .menu-tarta .texto-tarta h3 {
-    margin-left: 30px;
-  }
-  .menu-tarta .texto-tarta div {
-    margin-left: 30px;
-  }
-  .menu-tarta div img {
-    height: auto;
-    width: 100%;
-    margin: 0px 0px 25px 0px;
-    border-radius: 0px;
   }
 }
 

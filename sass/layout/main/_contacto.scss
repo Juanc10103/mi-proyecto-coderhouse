@@ -1,18 +1,23 @@
 .contacto-main {
-    width: 80%;
-    margin: 100px 0px 0px 180px;
     display: flex;
     justify-content: center;
-    gap: 40px;
+
 
     div {
+        width: 75vw;
+        margin: 50px 100px;
+
         iframe {
-            height: 600px;
-            width: 80%;
+            width: 100%;
         }
     }
 
     div {
+        margin: 50px 100px;
+        max-width: 300px;
+        min-width: 50px;
+        text-align: center;
+
         form {
             display: flex;
             flex-direction: column;
@@ -27,6 +32,9 @@
             text-decoration: underline;
             font-weight: bold;
             font-size: 18px;
+            text-align: center;
+            max-width: 200px;
+            min-width: 50px;
 
             :hover {
                 color: darkgreen;
@@ -43,9 +51,9 @@
 .button-form {
     width: 70px;
     padding: 8px;
-    margin-left: 37%;
     border-radius: 10px 5px;
     background-color: white;
+    margin: auto;
 
     :hover {
         background-color: rgb(194, 192, 192);
