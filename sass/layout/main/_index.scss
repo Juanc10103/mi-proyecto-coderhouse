@@ -39,6 +39,9 @@
              cursor: pointer;
              text-decoration: none;
              margin: 0px;
+             &:hover{
+                background-color:#f8b2aa ;
+             }
          }
 
      }
@@ -65,13 +68,6 @@
  }
 
 
-
- .principal a:hover {
-     background-color: #cc3c2f;
- }
-
-
-
  .caja-vianda {
      text-align: center;
      background-color: map-get($colores, color5);
@@ -95,7 +91,7 @@
              text-align: center;
 
              &:hover {
-                 transform: scale(1.03);
+                 transform: scale(1.05);
                  cursor: pointer;
              }
 
@@ -107,9 +103,6 @@
 
      }
  }
-
-
-
 
  .tamañosViandas {
      background-color: map-get($colores, color5);
